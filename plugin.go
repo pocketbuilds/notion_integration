@@ -44,18 +44,25 @@ func init() {
 
 const notionSkipContextKey string = "notion_skip"
 
+// Name implements xpb.Plugin.
 func (p *Plugin) Name() string {
 	return "notion_integration"
 }
 
+// This variable will automatically be set at build time by xpb
+var version string
+
+// Version implements xpb.Plugin.
 func (p *Plugin) Version() string {
-	return "v0.0.1"
+	return version
 }
 
+// Description implements xpb.Plugin.
 func (p *Plugin) Description() string {
 	return "Sync Pocketbase records with your Notion pages"
 }
 
+// Init implements xpb.Plugin.
 func (p *Plugin) Init(app core.App) error {
 
 	app.OnServe().BindFunc(p.setupNotionClient)
