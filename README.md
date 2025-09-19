@@ -1,5 +1,14 @@
 # Notion Integration
 
+## Installation
+
+1. [Install XPB](https://docs.pocketbuilds.com/installing-xpb).
+2. [Use the builder](https://docs.pocketbuilds.com/using-the-builder):
+
+```sh
+xpb build --with github.com/pocketbuilds/notion_integration@latest
+```
+
 ## Setup
 
 ### Create a Notion Database
