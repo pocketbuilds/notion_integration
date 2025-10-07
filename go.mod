@@ -4,7 +4,7 @@ go 1.23.3
 
 require (
 	github.com/pocketbase/pocketbase v0.23.0
-	github.com/pocketbuilds/xpb v0.0.2
+	github.com/pocketbuilds/xpb v0.0.3
 	github.com/spf13/cast v1.7.0
 )
 
